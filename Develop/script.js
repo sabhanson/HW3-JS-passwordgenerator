@@ -7,9 +7,13 @@ var numbers = ["0","1","2","3","4","5","6","7","8","9"]
 
 
 function generatePassword() {
-  window.confirm("Would you like me to create a password for you?")
-  window.prompt("How many characters would you like your password to be? You must choose a number between")
-  
+  window.confirm("Would you like me to create a password for you?");
+  var passLength = window.prompt("How many characters would you like your password to be? You must choose a number between 8 and 128");
+  alert ("You said " + passLength + " characters.");
+  var lowerConfirm = confirm("Would you like your password to contain lowercase letters?") 
+  var upperConfirm = confirm("Would you like your password to contain uppercase letters?") 
+  var symbolsConfirm = confirm("Would you like your password to contain symbols?") 
+  var numberssConfirm = confirm("Would you like your password to contain numbers?") 
 }
 
 // Write password to the #password input
