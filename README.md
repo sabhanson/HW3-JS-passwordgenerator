@@ -1,3 +1,3 @@
 # HW3-JS-passwordgenerator
 
-![alt text](./assets/passwordGenerator.gif)
+![alt text](passwordGenerator.gif)
