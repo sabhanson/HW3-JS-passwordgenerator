@@ -23,3 +23,6 @@ GIF attached showing proper inputs for prompts and improper inputs for prompts.
 
 ![GitHub followers](https://img.shields.io/github/followers/sabhanson?style=social)
 
+## Features
+
+This website brings up a window upon pressing "Generate Password". The window asks the user how many characters they want their password to be. Then it asks if they would like to include lower/uppercase letters, symbols, and/or numbers in their password. Depending on the user input, the function will generate a random and unique password.
