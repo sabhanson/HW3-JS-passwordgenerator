@@ -22,15 +22,33 @@ function generatePassword() {
     var passLength = window.prompt("Not a valid input. Try again");
   }
   //once user inputs a valid number, they will be alerted with this string
-  window.alert ("You said you'd like your password to be " + passLength + " characters. Thank you.")
+  window.alert ("You said you'd like your password to be " + passLength + " characters.")
 
+  //randomArray is currently an empty array, while it remains a value of 0, run this loop.
   while (randomArray.length === 0) {
+  
+    //if user confirms lowercase, lowercase letters will be added to the randomArray, continuing down the line
     if(window.confirm("Would you like your password to include lowercase letters?")) {
-      randomArray = randomArray.concat(lower)
+      randomArray = randomArray.concat(lower);
+    } if(window.confirm("Would you like your password to include uppercase letters?")) {
+      randomArray = randomArray.concat(upper);
+    } if(window.confirm("Would you like your password to include symbols?")) {
+      randomArray = randomArray.concat(symbols);
+    } if(window.confirm("Would you like your password to include numbers?")) {
+      randomArray = randomArray.concat(numbers);
+    } if(randomArray.length === 0) {
+      window.alert("You must select at least one type of character to include in your password.")
     }
   }
 
-}
+  //for loop. password output will be a random output of characters based on user input from lines 31-38.
+  for (var i = 0; i < passLength; i++) {
+    passwordOutput += randomArray[Math.floor(Math.random() * randomArray.length)];
+  } 
+
+  //final step of this function, passwordOutput will be returned.
+  return passwordOutput;
+} 
 
 
 
