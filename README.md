@@ -15,7 +15,7 @@ I learned a lot about javaScript, specifically how to use while and for loops. I
 
 User needs to first load the page. Then, user needs to click "Generate Password" to bring up the window. User must answer first prompt with a valid number between 8 and 128. User then must answer questions about whether or not they want to include: lowercase letters, uppercase letters, symbols, and/or numbers. After all prompts are properly answered, a unique password will populate in the box where it previously said "Your Secure Password".
 
-<img src = "/assets/passwordGenerator.gif">
+![gif of web in action](/assets/passwordGenerator.gif)
 Above: GIF first showing proper inputs for prompts then showing improper inputs for prompts.
 
 ## Badges
